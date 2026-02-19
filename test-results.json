@@ -1,0 +1,466 @@
+{
+    "timestamp": "2026-02-06 09:06:32",
+    "total": 54,
+    "passed": 43,
+    "failed": 11,
+    "success_rate": 79.6,
+    "results": [
+        {
+            "endpoint": "\/auth\/login",
+            "method": "POST",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/auth\/me",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/auth\/permissions",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/auth\/activities",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/auth\/activities could not be found."
+        },
+        {
+            "endpoint": "\/dashboard",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/dashboard\/stats",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/dashboard\/stats could not be found."
+        },
+        {
+            "endpoint": "\/documents",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/categories",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/types",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/statuses",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/needing-review",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/workflows\/definitions",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/workflows\/my-pending",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/audit",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/audit\/statistics",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/audit\/verify-integrity",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/audit\/export",
+            "method": "GET",
+            "status": 422,
+            "success": false,
+            "error": "The start date field is required. (and 1 more error)"
+        },
+        {
+            "endpoint": "\/auth\/logout",
+            "method": "POST",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/auth\/login",
+            "method": "POST",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/auth\/me",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/auth\/permissions",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/auth\/activities",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/auth\/activities could not be found."
+        },
+        {
+            "endpoint": "\/dashboard",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/dashboard\/stats",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/dashboard\/stats could not be found."
+        },
+        {
+            "endpoint": "\/documents",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/categories",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/types",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/statuses",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/needing-review",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/workflows\/definitions",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/workflows\/my-pending",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/audit",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/audit\/statistics",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/audit\/verify-integrity",
+            "method": "GET",
+            "status": 403,
+            "success": false,
+            "error": "Acc\u00e8s non autoris\u00e9"
+        },
+        {
+            "endpoint": "\/audit\/export",
+            "method": "GET",
+            "status": 422,
+            "success": false,
+            "error": "The start date field is required. (and 1 more error)"
+        },
+        {
+            "endpoint": "\/auth\/logout",
+            "method": "POST",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/auth\/login",
+            "method": "POST",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/auth\/me",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/auth\/permissions",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/auth\/activities",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/auth\/activities could not be found."
+        },
+        {
+            "endpoint": "\/dashboard",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/dashboard\/stats",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/dashboard\/stats could not be found."
+        },
+        {
+            "endpoint": "\/documents",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/categories",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/types",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/statuses",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/documents\/needing-review",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/workflows\/definitions",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/workflows\/my-pending",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/audit",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/audit\/statistics",
+            "method": "GET",
+            "status": 200,
+            "success": true,
+            "error": null
+        },
+        {
+            "endpoint": "\/audit\/verify-integrity",
+            "method": "GET",
+            "status": 403,
+            "success": false,
+            "error": "Acc\u00e8s non autoris\u00e9"
+        },
+        {
+            "endpoint": "\/audit\/export",
+            "method": "GET",
+            "status": 422,
+            "success": false,
+            "error": "The start date field is required. (and 1 more error)"
+        },
+        {
+            "endpoint": "\/auth\/logout",
+            "method": "POST",
+            "status": 200,
+            "success": true,
+            "error": null
+        }
+    ],
+    "errors": [
+        {
+            "endpoint": "\/auth\/activities",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/auth\/activities could not be found."
+        },
+        {
+            "endpoint": "\/dashboard\/stats",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/dashboard\/stats could not be found."
+        },
+        {
+            "endpoint": "\/audit\/export",
+            "method": "GET",
+            "status": 422,
+            "success": false,
+            "error": "The start date field is required. (and 1 more error)"
+        },
+        {
+            "endpoint": "\/auth\/activities",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/auth\/activities could not be found."
+        },
+        {
+            "endpoint": "\/dashboard\/stats",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/dashboard\/stats could not be found."
+        },
+        {
+            "endpoint": "\/audit\/verify-integrity",
+            "method": "GET",
+            "status": 403,
+            "success": false,
+            "error": "Acc\u00e8s non autoris\u00e9"
+        },
+        {
+            "endpoint": "\/audit\/export",
+            "method": "GET",
+            "status": 422,
+            "success": false,
+            "error": "The start date field is required. (and 1 more error)"
+        },
+        {
+            "endpoint": "\/auth\/activities",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/auth\/activities could not be found."
+        },
+        {
+            "endpoint": "\/dashboard\/stats",
+            "method": "GET",
+            "status": 404,
+            "success": false,
+            "error": "The route api\/ged\/dashboard\/stats could not be found."
+        },
+        {
+            "endpoint": "\/audit\/verify-integrity",
+            "method": "GET",
+            "status": 403,
+            "success": false,
+            "error": "Acc\u00e8s non autoris\u00e9"
+        },
+        {
+            "endpoint": "\/audit\/export",
+            "method": "GET",
+            "status": 422,
+            "success": false,
+            "error": "The start date field is required. (and 1 more error)"
+        }
+    ]
+}

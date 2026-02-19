@@ -1,0 +1,449 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+@source '../**/*.vue';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    /* GED Pharma Custom Colors */
+    --color-ged-primary: #1e40af;
+    --color-ged-primary-dark: #1e3a8a;
+    --color-ged-secondary: #0d9488;
+    --color-ged-accent: #7c3aed;
+    --color-ged-success: #059669;
+    --color-ged-warning: #d97706;
+    --color-ged-danger: #dc2626;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Document Status Badge Colors */
+.status-badge-draft {
+    background-color: #f3f4f6;
+    color: #374151;
+    border-color: #d1d5db;
+}
+
+.status-badge-pending {
+    background-color: #fef3c7;
+    color: #a16207;
+    border-color: #fcd34d;
+}
+
+.status-badge-review {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    border-color: #93c5fd;
+}
+
+.status-badge-approved {
+    background-color: #dcfce7;
+    color: #15803d;
+    border-color: #86efac;
+}
+
+.status-badge-effective {
+    background-color: #d1fae5;
+    color: #047857;
+    border-color: #6ee7b7;
+}
+
+.status-badge-obsolete {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border-color: #fca5a5;
+}
+
+.status-badge-archived {
+    background-color: #f1f5f9;
+    color: #475569;
+    border-color: #cbd5e1;
+}
+
+.status-badge-rejected {
+    background-color: #ffe4e6;
+    color: #be123c;
+    border-color: #fda4af;
+}
+
+/* Category Colors */
+.category-sop {
+    background-color: #3b82f6;
+}
+
+.category-form {
+    background-color: #10b981;
+}
+
+.category-spec {
+    background-color: #a855f7;
+}
+
+.category-protocol {
+    background-color: #f59e0b;
+}
+
+.category-report {
+    background-color: #06b6d4;
+}
+
+.category-certificate {
+    background-color: #f43f5e;
+}
+
+.category-procedure {
+    background-color: #6366f1;
+}
+
+.category-policy {
+    background-color: #14b8a6;
+}
+
+/* Print Utilities */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    .print-only {
+        display: block !important;
+    }
+
+    /* Hide navigation and controls when printing */
+    nav,
+    header,
+    aside,
+    footer,
+    button {
+        display: none !important;
+    }
+
+    /* Full width for content */
+    main {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+/* Transition Utilities */
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.slide-enter-from {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.slide-leave-to {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/* Modal Transitions */
+.modal-enter-active,
+.modal-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+    opacity: 0;
+}
+
+.modal-enter-active .modal-content,
+.modal-leave-active .modal-content {
+    transition: transform 0.3s ease;
+}
+
+.modal-enter-from .modal-content {
+    transform: scale(0.95);
+}
+
+.modal-leave-to .modal-content {
+    transform: scale(0.95);
+}
+
+/* Loading Spinner */
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pulse Animation for Notifications */
+.pulse-notification {
+    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Focus Ring for Accessibility */
+.focus-ring:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #3b82f6, 0 0 0 4px white;
+}
+
+/* Document Card Hover Effect */
+.document-card {
+    transition: all 0.2s ease-in-out;
+}
+
+.document-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Workflow Timeline */
+.workflow-timeline {
+    position: relative;
+}
+
+.workflow-timeline::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e5e7eb;
+}
+
+.workflow-step {
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.workflow-step::before {
+    content: '';
+    position: absolute;
+    left: 0.75rem;
+    top: 0.25rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 2px solid #d1d5db;
+    background-color: white;
+}
+
+.workflow-step.completed::before {
+    border-color: #22c55e;
+    background-color: #22c55e;
+}
+
+.workflow-step.current::before {
+    border-color: #3b82f6;
+    background-color: #3b82f6;
+}
+
+.workflow-step.pending::before {
+    border-color: #d1d5db;
+    background-color: #f3f4f6;
+}
+
+/* Table Styles for Audit Trail */
+.audit-table {
+    width: 100%;
+    font-size: 0.875rem;
+}
+
+.audit-table th {
+    background-color: #f9fafb;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.audit-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.audit-table tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Input Focus States */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+    border-color: #3b82f6;
+}
+
+/* Required Field Indicator */
+.required-field::after {
+    content: ' *';
+    color: #ef4444;
+}
+
+/* Signature Box */
+.signature-box {
+    border: 2px dashed #d1d5db;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+
+.signature-box:hover {
+    border-color: #60a5fa;
+}
+
+.signature-box.signed {
+    border-style: solid;
+    border-color: #22c55e;
+    background-color: #f0fdf4;
+}
+
+/* GED Pharma Branding */
+.ged-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1d4ed8;
+}
+
+.ged-logo::after {
+    content: 'Pharma';
+    color: #4b5563;
+    font-weight: 400;
+    margin-left: 0.25rem;
+}
+
+/* Compliance Badge */
+.compliance-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 9999px;
+}
+
+.compliance-badge.gmp {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.compliance-badge.cfr {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+.compliance-badge.iso {
+    background-color: #f3e8ff;
+    color: #7e22ce;
+}
+
+/* Glassmorphism & Premium UI */
+.glass-header {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 10;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.premium-shadow {
+    box-shadow:
+        0 4px 6px -1px cubic-bezier(0, 0, 0, 0.1),
+        0 2px 4px -2px cubic-bezier(0, 0, 0, 0.1),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.premium-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f5f9;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-card:hover {
+    box-shadow: 0 12px 30px -4px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.micro-interaction {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.micro-interaction:hover {
+    transform: scale(1.02);
+}
+
+.micro-interaction:active {
+    transform: scale(0.98);
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, #1e40af 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
